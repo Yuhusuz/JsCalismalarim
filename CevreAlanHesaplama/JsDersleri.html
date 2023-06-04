@@ -26,12 +26,13 @@ function cevre(){
 
   var deger=document.getElementById("uzunkenar").value;
   var deger2=document.getElementById("kisakenar").value;
+  deger=Number(deger);
+  deger2=Number(deger2);
   if (deger2>deger){
     alert("kısa kenar uzun kenardan uzun olamaz sılak")
   }
   else{
-  deger=Number(deger);
-  deger2=Number(deger2);
+
   var sonuc=deger*2+deger2*2;
   alert(sonuc);
   }
@@ -42,15 +43,15 @@ function alan(){
 
 var deger=document.getElementById("uzunkenar").value;
 var deger2=document.getElementById("kisakenar").value;
-
+deger=Number(deger);
+deger2=Number(deger2);
 if (deger2>deger){
     alert("kısa kenar uzun kenardan uzun olamaz sılak")
   }
-else
-deger=Number(deger);
-deger2=Number(deger2);
+else{
 var sonuc=deger*deger2;
 alert(sonuc);
+}
 }
 
 
