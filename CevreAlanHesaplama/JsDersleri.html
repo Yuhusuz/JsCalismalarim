@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+  <label>Uzun kenar</label>
+  <input type="text" id="uzunkenar" value="0"><br>
+  <label>Kısa kenar</label>
+  <input type="text" id="kisakenar" value="0"><br><br>
+
+  <button onclick="cevre()">Çevre Hesapla</button><br><br>
+  <button onclick="alan()">Alan Hesapla</button>
+
+
+
+<script>
+
+
+function cevre(){
+
+  var deger=document.getElementById("uzunkenar").value;
+  var deger2=document.getElementById("kisakenar").value;
+  if (deger2>deger){
+    alert("kısa kenar uzun kenardan uzun olamaz sılak")
+  }
+  else{
+  deger=Number(deger);
+  deger2=Number(deger2);
+  var sonuc=deger*2+deger2*2;
+  alert(sonuc);
+  }
+}
+
+
+function alan(){
+
+var deger=document.getElementById("uzunkenar").value;
+var deger2=document.getElementById("kisakenar").value;
+
+if (deger2>deger){
+    alert("kısa kenar uzun kenardan uzun olamaz sılak")
+  }
+else
+deger=Number(deger);
+deger2=Number(deger2);
+var sonuc=deger*deger2;
+alert(sonuc);
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+<!--
+<input type="text"id="kutu" value="0">
+<button onclick="artiranfonk()" id="artıran">+</button>
+<button onclick="azaltan()" id="azaltan">-</button>
+
+
+
+<script>
+
+function artiranfonk(){
+
+var artıran=document.getElementById("kutu").value;
+artıran=Number(artıran);
+artıran +=1;
+artıran=document.getElementById("kutu").value=artıran;
+}
+
+
+function azaltan(){
+
+var artıran=document.getElementById("kutu").value;
+artıran=Number(artıran);
+artıran -=1;
+artıran=document.getElementById("kutu").value=artıran;
+}
+
+
+</script>
+  
+
+
+
+
+
+
+
+
+
+<script>
+Not:çalışıyorsa elleme.
+var urunler=[
+{urun:"sut",agirlik:"1kg",fiyat:15},
+{urun:"elma",agirlik:"2kg",fiyat:13},
+{urun:"armut",agirlik:"1kg",fiyat:18}
+];
+function raf(){
+document.getElementById("demo").innerHTML=
+
+
+urunler[0].urun+" "+urunler[0].agirlik+" "+urunler[0].fiyat+"<br>"+
+urunler[1].urun+" "+urunler[1].agirlik+" "+urunler[1].fiyat+"<br>"+
+urunler[2].urun+" "+urunler[2].agirlik+" "+urunler[2].fiyat+"<br>";
+}
+
+function sıralama(){
+urunler.sort(function(a,b) {return (a.fiyat-b.fiyat) });
+raf();}
+
+sıralama();
+
+
+</script>
+
+
+
+
+
+  
+(geliştirilecek) çalışmaz çünkü buradakiler obje olarak tanımlıyor.For döngüsüne sokman lazım çalışması için.
+var urunler=[
+{urun:"sut",agirlik:"1kg",fiyat:"15tl"},
+{urun:"elma",agirlik:"2kg",fiyat:"13tl"},
+{urun:"armut",agirlik:"1kg",fiyat:"18tl"}
+];
+document.write(urunler.urun);
+
+
+
+var urunler={urun:"sut",agirlik:"1kg",fiyat:"15tl"};
+document.write(urunler.urun);
+bu çalışıyor
+
+
+
+
+  function myFunction() {
+  
+  return "Hello";
+  }
+  document.getElementById("demo").innerHTML = myFunction();
+
+
+
+
+
+
+
+
+  var a =["elma","armut","emine","davuk"];
+
+
+a.splice(2,1,"hey");
+
+document.write(a);
+
+var a =["elma","armut","emine"];
+var b=a.length;
+document.write(b);
+
+var deneme=a.push("kiraz");
+b=a.length
+document.write(b);
+
+
+
+
+
+  var a =["elma","armut","emine"];
+var b=a.length;
+document.write(b);
+
+var deneme=a.push("kiraz");
+
+document.write(deneme);
+
+var a="abc";
+a=a.charCodeAt(0);
+document.write(a);
+
+
+
+
+  
+(isimlerin ilk harifini büyük yazar gerisini güççük yazan fonksiyon)
+
+function duzeltici(isim){
+
+var a = isim;
+var a=a.toLowerCase();
+var a=a[0].toUpperCase()+a.slice(1);
+document.write(a);
+}
+duzeltici("RuvEyDa");
+
+
+
+
+var a ="Selam";
+
+var a =a.slice(1);
+document.write(a);
+
+
+
+var a = "miraç bir elma yedi ";
+var a = a.replace("miraç","emine");
+document.write(a);
+
+
+
+
+
+var a= "  selam   ";
+document.writeln(a.length);
+var a=a.trim();
+document.write(a.length);
+
+
+
+
+function sa (isim,soyad){
+  document.write("Hoşgeldin"+" "+isim+" "+"soyadınız"+" "+soyad+" "+"mi?" );
+
+}
+sa("Sevval","Göksel"); 
+
+
+
+
+
+        var sonuc;
+        function Topla(sayi1, sayi2) {
+          return sayi1 + sayi2;         // sayi1 ve sayi2 toplamını döndürür
+        }
+        sonuc = Topla(10, 5);
+
+document.write(Boolean(Topla));
+
+        
+        alert(sonuc);
+        
+
+
+
+
+
+
+
+        bu baika bir şey
+          var d =(c);
+  document.write(d);
+
+  function toplama(){
+  var a=5;
+  var b=8;
+  var c=a+b;
+  return c;}
+toplama();
+
+      */
+         function fonksi(isim) {
+        alert("hoşgeldin"+isim+isim);
+    }
+fonksi("miraç","zeynep");
+
+      -->
+
+      
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>
